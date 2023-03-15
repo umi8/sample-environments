@@ -9,4 +9,4 @@ jobs:
     environment:
       name: dev
     steps:
-      - run: echo `${{ secrets.MY_SECRET }} ${{ secrets.MY_VARIABLE }} !`
+      - run: echo `${{ secrets.MY_SECRET }} ${{ vars.MY_VARIABLE }} !`
