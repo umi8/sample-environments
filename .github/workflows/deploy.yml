@@ -1,0 +1,12 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: dev
+    steps:
+      - run: echo `${{ secrets.MY_SECRET }} ${{ secrets.MY_VARIABLE }} !`
